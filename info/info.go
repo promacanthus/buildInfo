@@ -5,7 +5,7 @@ import (
 	"runtime"
 )
 
-var gitCommit string
+var GitCommit string
 
 type Info struct {
 	GitCommit string
@@ -17,7 +17,7 @@ type Info struct {
 var info Info
 
 func init() {
-	info.GitCommit = gitCommit
+	info.GitCommit = GitCommit
 	info.GoOS = runtime.GOOS
 	info.GoArch = runtime.GOARCH
 	info.GoVersion = runtime.Version()
